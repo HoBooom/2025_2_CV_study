@@ -1,7 +1,6 @@
 import cv2 as cv
 import sys
 
-# 이미지 경로를 현재 프로젝트 구조에 맞게 수정
 img=cv.imread('./image/grandma1.jpeg')
 
 if img is None:
