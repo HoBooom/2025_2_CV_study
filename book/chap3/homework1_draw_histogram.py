@@ -13,8 +13,9 @@ h_r=cv.calcHist([img],[2],None,[256],[0,256])
 h_g=cv.calcHist([img],[1],None,[256],[0,256])
 h_b=cv.calcHist([img],[0],None,[256],[0,256])
 
+#plot -> matplotlib 라이브러리를 통해 그래프 그리기
 plt.plot(h_r,color='r',label='Red',linewidth=1)
 plt.plot(h_g,color='g',label='Green',linewidth=1)
 plt.plot(h_b,color='b',label='Blue',linewidth=1)
-plt.legend()
+plt.legend() #범례 표시
 plt.show()

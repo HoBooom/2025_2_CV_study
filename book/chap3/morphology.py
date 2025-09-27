@@ -23,7 +23,7 @@ se=np.uint8([[0,0,1,0,0],
 
 #팽창
 b_dilation = cv.dilate(b,se,iterations=1)
-plt.imshow(b_dilation,cmap='gray')
+plt.imshow(b_dilation,cmap='gray'),plt.xticks([]),plt.yticks([])
 plt.show()
 
 #침식
